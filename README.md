@@ -47,3 +47,53 @@ Ensure you have:
 git clone https://github.com/AnuragChaudhari7/stock‑volatility‑analysis.git
 cd stock‑volatility‑analysis
 pip install -r requirements.txt
+```
+
+### Usage
+```bash
+jupyter notebook src/analysis.ipynb
+```
+Alternatively, run scripts from the src/ folder (if applicable):
+
+```
+python src/compute_volatility.py --symbol AAPL --start 2020-01-01 --end 2025-01-01
+```
+
+### Project Structure
+Example layout (adjust to your own):
+```
+.
+├── src/
+│   ├── analysis.ipynb
+│   ├── compute_volatility.py
+│   └── data_utils.py
+├── data/
+│   ├── raw/
+│   └── processed/
+├── requirements.txt
+└── README.md
+```
+### Results & Insights
+Summarize key takeaways or findings. For instance:
+
+"Volatility spikes during market downturns (e.g., March 2020)."
+
+"GARCH models capture volatility clustering effectively, outperforming simple rolling window approaches".
+
+### Potential Improvements
+Incorporate GARCH/GJR‑GARCH/EGARCH models
+
+Add deep learning forecasts (e.g., using LSTM)
+
+Fetch real-time data from financial APIs (e.g., yfinance)
+
+Build an interactive dashboard (e.g., with Streamlit or Dash)
+
+### Contributing
+Contributions are welcome! Please open an issue or submit a pull request.
+
+### License
+MIT License — feel free to use and modify!
+
+
+
